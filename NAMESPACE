@@ -2,5 +2,5 @@
 
 export(center)
 export(europe_07)
-import(dplyr)
 import(ggplot2)
+import(magrittr)

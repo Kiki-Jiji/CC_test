@@ -13,11 +13,11 @@
 #'@return returns a dataset
 #'
 #'@export
-#'
-#'@import dplyr
+#'@import magrittr
 #'@import ggplot2
 
-europe_07 = function(data, plot = FALSE, denomination = "B") {
+
+europe_07 = function(data, plot = FALSE, denomination = B) {
 
   if (denomination == "T") {
     convert = function(x ) {
@@ -36,10 +36,6 @@ europe_07 = function(data, plot = FALSE, denomination = "B") {
     convert = function(x ) {
       x / 1000000
     }
-  }  else {
-    convert = function(x ) {
-     x
-   }
   }
 
  internal_object <- data %>%
@@ -51,8 +47,7 @@ europe_07 = function(data, plot = FALSE, denomination = "B") {
   dplyr::mutate(GDP_value  = convert(GDP))
 
  if(plot) {
-   plot <-  internal_object %>%
-    ggplot(aes(x = GDP_value, y = lifeExp, color = continent)) + geom_point() + scale_x_log10()
+   plot <- ggplot2::ggplot(internal_object, aes(x = GDP_value, y = lifeExp, color = continent)) + geom_point() + scale_x_log10()
  }
 
  return(plot)
