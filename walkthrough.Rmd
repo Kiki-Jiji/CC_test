@@ -1,0 +1,28 @@
+---
+title: "Walkthrough"
+author: "Joshua"
+date: "9 July 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Coffee and Coding
+
+* Three functions in the package
+* build package from scratch, but backup in case it doesn't work 
+* start with hello world fucntion that comes with package
+
+* Start by init a package in R studio
+* Then change documentation
+* Then build and make sure it's running 
+* The add second function Center, raw code with comments, build and show 
+* Then change into a proper r function with documentation
+* Finally a longer function. Discuss that this is an example RAP pipeline, using gapminder data as an example.
+* the aim of the pipeline is to convert the raw data you recieve and do some data manipulation, we eant to create a column of GDP, (as it comres with population and GDP per capita) and we want to be able to change the denominatoion. We also want to be able to polt the data for data validation purposes .
+* Come the short funtion we have already written. 
+* The add documenation, from RAP guide 
+* Then add internal function to chnage deomiation 
+* finally add plot 

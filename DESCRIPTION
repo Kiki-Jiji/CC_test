@@ -1,0 +1,11 @@
+Package: cc
+Type: Package
+Title: A example package for Coffee and Coding
+Version: 0.1.0
+Authors@R: person("Joshua", "Halls", email = "joshua.halls@ons.gov.uk",
+                role = c("aut", "cre"))
+Description: Some examples functions
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
